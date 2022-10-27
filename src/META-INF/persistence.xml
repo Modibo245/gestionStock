@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="GestionStockPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>gestionstock.TimeZoneTransitionType</class>
+    <class>gestionstock.Event</class>
+    <class>gestionstock.NdbBinlogIndex</class>
+    <class>gestionstock.User</class>
+    <class>gestionstock.ProxiesPriv</class>
+    <class>gestionstock.SlaveRelayLogInfo</class>
+    <class>gestionstock.InnodbTableStats</class>
+    <class>gestionstock.TablesPriv</class>
+    <class>gestionstock.Func</class>
+    <class>gestionstock.InnodbIndexStats</class>
+    <class>gestionstock.HelpRelation</class>
+    <class>gestionstock.TimeZoneName</class>
+    <class>gestionstock.HelpKeyword</class>
+    <class>gestionstock.Db</class>
+    <class>gestionstock.TimeZone</class>
+    <class>gestionstock.TimeZoneLeapSecond</class>
+    <class>gestionstock.TimeZoneTransition</class>
+    <class>gestionstock.ColumnsPriv</class>
+    <class>gestionstock.Proc</class>
+    <class>gestionstock.Servers</class>
+    <class>gestionstock.ProcsPriv</class>
+    <class>gestionstock.HelpTopic</class>
+    <class>gestionstock.SlaveWorkerInfo</class>
+    <class>gestionstock.Plugin</class>
+    <class>gestionstock.SlaveMasterInfo</class>
+    <class>gestionstock.HelpCategory</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
